@@ -1,0 +1,95 @@
+{
+  "name": "Swift Server Workgroup Collection",
+  "overview": "All libraries and tools incubated by the SSWG.",
+  "keywords": ["server", "sswg"],
+  "packages": [
+    {
+      "url": "http://github.com/apple/swift-nio",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "http://github.com/apple/swift-log",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "http://github.com/apple/swift-metrics",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/vapor/nio-postgres",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/mordil/swift-redis-nio-client",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/swift-server/async-http-client",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/kylebrowning/swift-nio-apns",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/apple/swift-statsd-client",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/MrLotU/SwiftPrometheus",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/grpc/grpc-swift",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/apple/swift-crypto",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/mattpolzin/OpenAPIKit",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/mongodb/mongo-swift-driver",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/swift-server/swift-aws-lambda-runtime",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/swift-server/swift-backtrace",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/swift-server/swift-service-lifecycle",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/soto-project/soto",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    }
+  ],
+  "author": {
+    "name": "Swift Server Workgroup"
+  }
+}

@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+
+  runtime-setup:
+    image: sswg-collection:default
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+  common: &common
+    image: sswg-collection:default
+    depends_on: [runtime-setup]
+    volumes:
+      - ~/.ssh:/root/.ssh
+      - ..:/code:z
+      - ../.cache:/cache:z
+    working_dir: /code
+    cap_drop:
+      - CAP_NET_RAW
+      - CAP_NET_BIND_SERVICE
+
+  generate:
+    <<: *common
+    environment:
+      - GITHUB_API_TOKEN
+    command: /bin/bash -cl "package-collection-generate /code/packages.json /code/collection.json  --working-directory-path /cache --auth-token github:github.com:${GITHUB_API_TOKEN} --verbose"
+
+  shell:
+    <<: *common
+    entrypoint: /bin/bash -l
