@@ -24,7 +24,11 @@ services:
     <<: *common
     environment:
       - GITHUB_API_TOKEN
-    command: /bin/bash -cl "package-collection-generate /code/packages.json /code/collection.json  --working-directory-path /cache --auth-token github:github.com:${GITHUB_API_TOKEN} --verbose"
+    command: /bin/bash -cl "package-collection-generate /code/packages.json /code/collection-new.json  --working-directory-path /cache --auth-token github:github.com:${GITHUB_API_TOKEN} --verbose"
+
+  diff:
+    <<: *common
+    command: /bin/bash -cl "package-collection-diff /code/collection.json /code/collection-new.json | tee /code/diff.output"
 
   shell:
     <<: *common

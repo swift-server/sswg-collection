@@ -35,3 +35,4 @@ ARG generator_version=main
 RUN git clone --branch $generator_version --depth 1 https://github.com/apple/swift-package-collection-generator $HOME/.tools/package-collection-generator
 RUN cd $HOME/.tools/package-collection-generator && swift build -c release
 RUN ln -s $HOME/.tools/package-collection-generator/.build/release/package-collection-generate $HOME/.tools/package-collection-generate
+RUN ln -s $HOME/.tools/package-collection-generator/.build/release/package-collection-diff $HOME/.tools/package-collection-diff
