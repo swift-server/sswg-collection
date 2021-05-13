@@ -15,6 +15,7 @@ services:
       - ~/.ssh:/root/.ssh
       - ..:/code:z
       - ../.cache:/cache:z
+      - ../.output:/.output:z
     working_dir: /code
     cap_drop:
       - CAP_NET_RAW
@@ -22,13 +23,27 @@ services:
 
   generate:
     <<: *common
-    environment:
-      - GITHUB_API_TOKEN
-    command: /bin/bash -cl "package-collection-generate /code/packages.json /code/collection-new.json  --working-directory-path /cache --auth-token github:github.com:${GITHUB_API_TOKEN} --verbose"
+    command:
+      - /bin/bash
+      - -cl
+      - |
+          package-collection-generate \
+          packages.json \
+          ${OUTPUT:-.output/collection.json} \
+          --working-directory-path /cache \
+          --auth-token github:github.com:${GITHUB_API_TOKEN} \
+          --verbose
 
   diff:
     <<: *common
-    command: /bin/bash -cl "package-collection-diff /code/collection.json /code/collection-new.json | tee /code/diff.output"
+    command:
+      - /bin/bash
+      - -cl
+      - |
+          package-collection-diff \
+          ${INPUT1:-collection.json} \
+          ${INPUT2:-.output/collection.json} \
+          | tee ${OUTPUT:-.output/diff}
 
   shell:
     <<: *common
