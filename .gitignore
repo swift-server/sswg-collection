@@ -1,2 +1,5 @@
 .cache
 .output
+
+certs/private.pem
+certs/signing.cer

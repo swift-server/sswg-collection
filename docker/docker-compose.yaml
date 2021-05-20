@@ -14,6 +14,7 @@ services:
     volumes:
       - ~/.ssh:/root/.ssh
       - ..:/code:z
+      - ../certs:/certs:ro
       - ../.cache:/cache:z
       - ../.output:/.output:z
     working_dir: /code
@@ -25,7 +26,7 @@ services:
     <<: *common
     command:
       - /bin/bash
-      - -cl
+      - -clx
       - |
           package-collection-generate \
           packages.json \
@@ -38,12 +39,27 @@ services:
     <<: *common
     command:
       - /bin/bash
-      - -cl
+      - -clx
       - |
           package-collection-diff \
           ${INPUT1:-collection.json} \
           ${INPUT2:-.output/collection.json} \
           | tee ${OUTPUT:-.output/diff}
+  
+  sign:
+    <<: *common
+    command:
+      - /bin/bash
+      - -clx
+      - |
+          package-collection-sign \
+          --verbose \
+          ${INPUT:-.output/collection.json} \
+          ${OUPUT:-.output/collection-signed.json} \
+          ${PRIVATE_KEY_PATH:-/certs/private.pem} \
+          ${SIGNING_CERT_PATH:-/certs/signing.cer} \
+          ${INTERMIDIATE_CERT_PATH:-/certs/intermediate.cer} \
+          ${ROOT_CERT_PATH:-/certs/root.cer}
 
   shell:
     <<: *common
