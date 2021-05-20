@@ -14,9 +14,12 @@ services:
     volumes:
       - ~/.ssh:/root/.ssh
       - ..:/code:z
-      - ../certs:/certs:ro
       - ../.cache:/cache:z
       - ../.output:/.output:z
+      - ${PRIVATE_KEY_PATH:-../certs/private.pem}:/certs/private.pem:ro
+      - ${SIGNING_CERT_PATH:-../certs/signing.cer}:/certs/signing.cer:ro
+      - ${INTERMIDIATE_CERT_PATH:-../certs/intermediate.cer}:/certs/intermediate.cer:ro
+      - ${ROOT_CERT_PATH:-../certs/root.cer}:/certs/root.cer:ro
     working_dir: /code
     cap_drop:
       - CAP_NET_RAW
@@ -45,7 +48,7 @@ services:
           ${INPUT1:-collection.json} \
           ${INPUT2:-.output/collection.json} \
           | tee ${OUTPUT:-.output/diff}
-  
+
   sign:
     <<: *common
     command:
@@ -56,10 +59,10 @@ services:
           --verbose \
           ${INPUT:-.output/collection.json} \
           ${OUPUT:-.output/collection-signed.json} \
-          ${PRIVATE_KEY_PATH:-/certs/private.pem} \
-          ${SIGNING_CERT_PATH:-/certs/signing.cer} \
-          ${INTERMIDIATE_CERT_PATH:-/certs/intermediate.cer} \
-          ${ROOT_CERT_PATH:-/certs/root.cer}
+          certs/private.pem \
+          /certs/signing.cer \
+          /certs/intermediate.cer \
+          /certs/root.cer
 
   shell:
     <<: *common
