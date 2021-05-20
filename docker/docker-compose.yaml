@@ -59,7 +59,7 @@ services:
           --verbose \
           ${INPUT:-.output/collection.json} \
           ${OUPUT:-.output/collection-signed.json} \
-          certs/private.pem \
+          /certs/private.pem \
           /certs/signing.cer \
           /certs/intermediate.cer \
           /certs/root.cer
