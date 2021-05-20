@@ -16,10 +16,10 @@ services:
       - ..:/code:z
       - ../.cache:/cache:z
       - ../.output:/.output:z
-      - ${PRIVATE_KEY_PATH:-../certs/private.pem}:/certs/private.pem:ro
-      - ${SIGNING_CERT_PATH:-../certs/signing.cer}:/certs/signing.cer:ro
-      - ${INTERMIDIATE_CERT_PATH:-../certs/intermediate.cer}:/certs/intermediate.cer:ro
-      - ${ROOT_CERT_PATH:-../certs/root.cer}:/certs/root.cer:ro
+      - ${PRIVATE_KEY_PATH:-../certs/private.pem}:/certs/private.pem:z
+      - ${SIGNING_CERT_PATH:-../certs/signing.cer}:/certs/signing.cer:z
+      - ${INTERMIDIATE_CERT_PATH:-../certs/intermediate.cer}:/certs/intermediate.cer:z
+      - ${ROOT_CERT_PATH:-../certs/root.cer}:/certs/root.cer:z
     working_dir: /code
     cap_drop:
       - CAP_NET_RAW
