@@ -7,7 +7,9 @@ The tool uses docker to invoke the [Package Collection Generator](https://github
 having the input captured in `packages.json` and output as `collection.json`.
 
 The resulting `collection.json` is the collection shared with the community.
-As such it's URL (https://raw.githubusercontent.com/swift-server/sswg-collection/main/collection.json) needs to stay stable.
+As such it's underlying URL (https://raw.githubusercontent.com/swift-server/sswg-collection/main/collection.json) needs to stay stable.
+
+The collection is made available to users from https://swiftserver.group/collection/sswg.json which redirects to the underlying content in this repository.
 
 The tool is run by a daily (TBD) CI job such that changes to the package list or the package details are reflected quickly.
 
