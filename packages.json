@@ -4,10 +4,25 @@
   "keywords": ["server", "sswg"],
   "packages": [
     {
+      "url": "https://github.com/apple/swift-cassandra-client",
+      "excludedProducts": [],
+      "excludedTargets": [],      
+    },
+    {
       "url": "https://github.com/apple/swift-crypto",
       "excludedProducts": [],
       "excludedTargets": [],
-    },    
+    },
+    {
+      "url": "https://github.com/apple/swift-distributed-actors",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/apple/swift-distributed-tracing",
+      "excludedProducts": [],
+      "excludedTargets": [],      
+    },
     {
       "url": "http://github.com/apple/swift-log",
       "excludedProducts": [],
@@ -32,22 +47,22 @@
       "url": "https://github.com/grpc/grpc-swift",
       "excludedProducts": [],
       "excludedTargets": [],
-    },    
+    },
     {
       "url": "https://github.com/kylebrowning/swift-nio-apns",
       "excludedProducts": [],
       "excludedTargets": [],
-    },        
+    },
     {
       "url": "https://github.com/mattpolzin/OpenAPIKit",
       "excludedProducts": [],
       "excludedTargets": [],
-    },    
+    },
     {
       "url": "https://github.com/mongodb/mongo-swift-driver",
       "excludedProducts": [],
       "excludedTargets": [],
-    },    
+    },
     {
       "url": "https://github.com/mordil/swift-redis-nio-client",
       "excludedProducts": [],
@@ -57,12 +72,12 @@
       "url": "https://github.com/MrLotU/SwiftPrometheus",
       "excludedProducts": [],
       "excludedTargets": [],
-    },    
+    },
     {
       "url": "https://github.com/soto-project/soto",
       "excludedProducts": [],
       "excludedTargets": [],
-    },    
+    },
     {
       "url": "https://github.com/swift-server/async-http-client",
       "excludedProducts": [],
@@ -82,7 +97,7 @@
       "url": "https://github.com/swift-server/swift-service-lifecycle",
       "excludedProducts": [],
       "excludedTargets": [],
-    },        
+    },
     {
       "url": "https://github.com/vapor/nio-postgres",
       "excludedProducts": [],
