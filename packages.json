@@ -4,9 +4,24 @@
   "keywords": ["server", "sswg"],
   "packages": [
     {
-      "url": "http://github.com/apple/swift-nio",
+      "url": "https://github.com/apple/swift-cassandra-client",
+      "excludedProducts": [],
+      "excludedTargets": [],      
+    },
+    {
+      "url": "https://github.com/apple/swift-crypto",
       "excludedProducts": [],
       "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/apple/swift-distributed-actors",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/apple/swift-distributed-tracing",
+      "excludedProducts": [],
+      "excludedTargets": [],      
     },
     {
       "url": "http://github.com/apple/swift-log",
@@ -19,22 +34,7 @@
       "excludedTargets": [],
     },
     {
-      "url": "https://github.com/vapor/nio-postgres",
-      "excludedProducts": [],
-      "excludedTargets": [],
-    },
-    {
-      "url": "https://github.com/mordil/swift-redis-nio-client",
-      "excludedProducts": [],
-      "excludedTargets": [],
-    },
-    {
-      "url": "https://github.com/swift-server/async-http-client",
-      "excludedProducts": [],
-      "excludedTargets": [],
-    },
-    {
-      "url": "https://github.com/kylebrowning/swift-nio-apns",
+      "url": "http://github.com/apple/swift-nio",
       "excludedProducts": [],
       "excludedTargets": [],
     },
@@ -44,17 +44,12 @@
       "excludedTargets": [],
     },
     {
-      "url": "https://github.com/MrLotU/SwiftPrometheus",
-      "excludedProducts": [],
-      "excludedTargets": [],
-    },
-    {
       "url": "https://github.com/grpc/grpc-swift",
       "excludedProducts": [],
       "excludedTargets": [],
     },
     {
-      "url": "https://github.com/apple/swift-crypto",
+      "url": "https://github.com/kylebrowning/swift-nio-apns",
       "excludedProducts": [],
       "excludedTargets": [],
     },
@@ -65,6 +60,26 @@
     },
     {
       "url": "https://github.com/mongodb/mongo-swift-driver",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/mordil/swift-redis-nio-client",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/MrLotU/SwiftPrometheus",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/soto-project/soto",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/swift-server/async-http-client",
       "excludedProducts": [],
       "excludedTargets": [],
     },
@@ -84,7 +99,7 @@
       "excludedTargets": [],
     },
     {
-      "url": "https://github.com/soto-project/soto",
+      "url": "https://github.com/vapor/nio-postgres",
       "excludedProducts": [],
       "excludedTargets": [],
     }
