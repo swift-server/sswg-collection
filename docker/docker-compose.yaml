@@ -18,7 +18,7 @@ services:
       - ../.output:/.output:z
       - ${PRIVATE_KEY_PATH:-../certs/private.pem}:/certs/private.pem:z
       - ${SIGNING_CERT_PATH:-../certs/signing.cer}:/certs/signing.cer:z
-      - ${INTERMIDIATE_CERT_PATH:-../certs/intermediate.cer}:/certs/intermediate.cer:z
+      - ${INTERMEDIATE_CERT_PATH:-../certs/intermediate.cer}:/certs/intermediate.cer:z
       - ${ROOT_CERT_PATH:-../certs/root.cer}:/certs/root.cer:z
     working_dir: /code
     cap_drop:
