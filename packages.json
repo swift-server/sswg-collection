@@ -94,6 +94,11 @@
       "excludedTargets": [],
     },
     {
+      "url": "https://github.com/swift-server/swift-prometheus",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
       "url": "https://github.com/swift-server/swift-service-lifecycle",
       "excludedProducts": [],
       "excludedTargets": [],
@@ -105,11 +110,6 @@
     },
     {
       "url": "https://github.com/swift-server-community/mqtt-nio",
-      "excludedProducts": [],
-      "excludedTargets": [],
-    },
-    {
-      "url": "https://github.com/swift-server-community/SwiftPrometheus",
       "excludedProducts": [],
       "excludedTargets": [],
     },
