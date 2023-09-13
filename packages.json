@@ -44,12 +44,17 @@
       "excludedTargets": [],
     },
     {
-      "url": "https://github.com/grpc/grpc-swift",
+      "url": "https://github.com/GraphQLSwift/Graphiti",
       "excludedProducts": [],
       "excludedTargets": [],
     },
     {
-      "url": "https://github.com/kylebrowning/swift-nio-apns",
+      "url": "https://github.com/GraphQLSwift/GraphQL",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/grpc/grpc-swift",
       "excludedProducts": [],
       "excludedTargets": [],
     },
@@ -64,22 +69,17 @@
       "excludedTargets": [],
     },
     {
-      "url": "https://github.com/mordil/swift-redis-nio-client",
-      "excludedProducts": [],
-      "excludedTargets": [],
-    },
-    {
-      "url": "https://github.com/MrLotU/SwiftPrometheus",
-      "excludedProducts": [],
-      "excludedTargets": [],
-    },
-    {
       "url": "https://github.com/soto-project/soto",
       "excludedProducts": [],
       "excludedTargets": [],
     },
     {
       "url": "https://github.com/swift-server/async-http-client",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/swift-server/RediStack",
       "excludedProducts": [],
       "excludedTargets": [],
     },
@@ -94,12 +94,32 @@
       "excludedTargets": [],
     },
     {
+      "url": "https://github.com/swift-server/swift-prometheus",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
       "url": "https://github.com/swift-server/swift-service-lifecycle",
       "excludedProducts": [],
       "excludedTargets": [],
     },
     {
-      "url": "https://github.com/vapor/nio-postgres",
+      "url": "https://github.com/swift-server-community/APNSwift",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/swift-server-community/mqtt-nio",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/vapor/multipart-kit",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/vapor/postgres-nio",
       "excludedProducts": [],
       "excludedTargets": [],
     }
