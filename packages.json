@@ -44,6 +44,11 @@
       "excludedTargets": [],
     },
     {
+      "url": "https://github.com/apple/swift-service-context",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
       "url": "https://github.com/GraphQLSwift/Graphiti",
       "excludedProducts": [],
       "excludedTargets": [],
@@ -120,6 +125,11 @@
     },
     {
       "url": "https://github.com/vapor/postgres-nio",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/vapor/sqlite-nio",
       "excludedProducts": [],
       "excludedTargets": [],
     }
