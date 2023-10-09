@@ -47,7 +47,7 @@
       "url": "https://github.com/apple/swift-service-context",
       "excludedProducts": [],
       "excludedTargets": [],
-    },    
+    },
     {
       "url": "https://github.com/apple/swift-statsd-client",
       "excludedProducts": [],
