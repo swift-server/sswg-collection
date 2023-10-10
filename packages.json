@@ -4,11 +4,6 @@
   "keywords": ["server", "sswg"],
   "packages": [
     {
-      "url": "https://github.com/apple/swift-async-dns-resolver",
-      "excludedProducts": [],
-      "excludedTargets": [],      
-    },
-    {
       "url": "https://github.com/apple/swift-cassandra-client",
       "excludedProducts": [],
       "excludedTargets": [],      
@@ -44,12 +39,12 @@
       "excludedTargets": [],
     },
     {
-      "url": "https://github.com/apple/swift-service-context",
+      "url": "https://github.com/apple/swift-statsd-client",
       "excludedProducts": [],
       "excludedTargets": [],
     },
     {
-      "url": "https://github.com/apple/swift-statsd-client",
+      "url": "https://github.com/apple/swift-service-context",
       "excludedProducts": [],
       "excludedTargets": [],
     },
