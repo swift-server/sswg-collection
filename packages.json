@@ -132,6 +132,16 @@
       "url": "https://github.com/vapor/sqlite-nio",
       "excludedProducts": [],
       "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/DiscordBM/DiscordBM",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/apple/swift-openapi-generator",
+      "excludedProducts": [],
+      "excludedTargets": [],
     }
   ],
   "author": {
