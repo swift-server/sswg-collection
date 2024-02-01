@@ -142,6 +142,11 @@
       "url": "https://github.com/apple/swift-openapi-generator",
       "excludedProducts": [],
       "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/orlandos-nl/MongoKitten",
+      "excludedProducts": [],
+      "excludedTargets": [],
     }
   ],
   "author": {
