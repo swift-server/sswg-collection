@@ -147,6 +147,11 @@
       "url": "https://github.com/orlandos-nl/MongoKitten",
       "excludedProducts": [],
       "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/vapor/jwt-kit",
+      "excludedProducts": [],
+      "excludedTargets": [],
     }
   ],
   "author": {
