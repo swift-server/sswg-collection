@@ -152,6 +152,16 @@
       "url": "https://github.com/lovetodream/oracle-nio",
       "excludedProducts": [],
       "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/hummingbird-project/hummingbird",
+      "excludedProducts": [],
+      "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/vapor/vapor",
+      "excludedProducts": [],
+      "excludedTargets": [],
     }
   ],
   "author": {
