@@ -162,6 +162,11 @@
       "url": "https://github.com/vapor/vapor",
       "excludedProducts": [],
       "excludedTargets": [],
+    },
+    {
+      "url": "https://github.com/vapor/jwt-kit",
+      "excludedProducts": [],
+      "excludedTargets": [],
     }
   ],
   "author": {
